@@ -2,7 +2,7 @@
 
 <h1>Listing Breads</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -20,7 +20,7 @@
         <td><%= bread.thickness_in_inches %></td>
         <td><%= link_to 'Show', bread %></td>
         <td><%= link_to 'Edit', edit_bread_path(bread) %></td>
-        <td><%= link_to 'Destroy', bread, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', bread, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"  %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Bread', new_bread_path %>
+<%= link_to 'New Bread', new_bread_path, class: "btn btn-primary" %>

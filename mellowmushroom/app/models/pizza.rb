@@ -5,4 +5,5 @@ class Pizza < ActiveRecord::Base
                         :photo
   validates_uniqueness_of :name
   belongs_to :bread
+  belongs_to :sauce
 end
